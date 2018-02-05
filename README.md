@@ -426,9 +426,9 @@ To watch the solution work, you can test the cart abandonment and advertisement 
    wsk activation get f6f5ae1dcb3d4292991d63f22283fb94
    ```
 
-1.  View https://aam-demo2.herokuapp.com/index.html again to see the custom ad banner displayed for the visitor!
+1.  View the [web site](https://aam-demo2.herokuapp.com/index.html) again to see the custom ad banner displayed for the visitor!
 
-   ![best coat message in ui](https://user-images.githubusercontent.com/29133525/34689847-32b35e8c-f474-11e7-971b-a4d23009f103.png)
+      ![custom ad banner done](https://user-images.githubusercontent.com/29133525/35831651-b82cbf8a-0a87-11e8-9929-7856fff3a09d.png)
 
 ## Authors
 - Hiren Shah [@hirenshah111](https://github.com/hirenshah111).
