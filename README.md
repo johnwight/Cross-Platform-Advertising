@@ -414,7 +414,7 @@ To watch the solution work, you can test the cart abandonment and advertisement 
 1. On the Command Line Interface (CLI) enter the following commands:
 
    ```
-   wsk activation list runtime
+   wsk activation list aam
    ```
 
    ![runtime commands](https://user-images.githubusercontent.com/29133525/34690130-28f88e16-f475-11e7-88e3-35e4202b27e7.png)
@@ -442,56 +442,3 @@ Please help make this solution as useful as possible. If you find a problem in t
    ![submit new issue](https://user-images.githubusercontent.com/29133525/32515298-f344bd5a-c3bc-11e7-9978-34516f964f9f.png)
    
    
-
-
-
-
-
-
-
-
-Step 7: Let's Test 
-Execute below steps to test and debug the solution.
-
-Go to https://aam-demo2.herokuapp.com as you can see that currently there are "No ads to show".
-
-
-
-Go to http://localhost:4502/content/we-retail/us/en/products/men.html
-
-Click on any jacket or coat you like.
-
-
-
-Select a Color and Size and click on "ADD TO CART".
-
-
-
-Click on Checkout.
-
-
-
-Enter details and click continue.
-
-
-
-Close the tab to initiate the cart abandonment scenario.
-
-Go to Triggers UI page, wait for your trigger event to surface.
-
-
-
-Go to Command Line Interface (CLI) and execute below commands.
-
-wsk activation list aam
-
-
-
-Select the top most activation and execute below command.
-
-wsk activation get f6f5ae1dcb3d4292991d63f22283fb94
-
-
-
-Go to https://aam-demo2.herokuapp.com/index.html again and you will see that the ad banner is updated. A custom ad banner will be displayed to visitor!
-
