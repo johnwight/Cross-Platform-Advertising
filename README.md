@@ -53,7 +53,7 @@ To set up Adobe products for this solution:
 
 1. [Set Up Adobe Audience Manager](#Set-up-AM)
 
-1. [Third Party Website](#Third-party)
+1. [Third-Party Website](#Third-party)
 
 
 
@@ -340,12 +340,13 @@ In this solution, we deploy a sample website on different a domain to collect da
 
 To deploy the site:
 
-1. Create an ad banner targeted to a specific audience segment. In this example, we will show the following advertisement to an audience segment who added coats or jackets into the cart but later abandoned the cart. This audience segment includes high-potential customers who might eventually make a purchase (because we know that they abandoned the cart with coat or jackets as opposed to those who just visited the product page) so retailers would be ready to pay more money for serving the ad to this audience segment.
+1. Create an ad banner targeted to a specific audience segment. In this example, we will show the following advertisement to an audience segment that added coats or jackets into the cart but later abandoned the cart. This audience segment includes high-potential customers who might eventually make a purchase (because we know that they abandoned the cart with coat or jackets as opposed to those who just visited the product page) so retailers would be ready to pay more money for serving the ad to this audience segment.
 
    ![ad banner](https://user-images.githubusercontent.com/29133525/35830535-d012cc6a-0a83-11e8-9f42-4c6abf322764.png)
 
-1. Add the following script in the HTML <head> section of the webpage where you want to display the ad.
+1. Add the following script in the HTML `<head>` section of the webpage where you want to display the ad.
 
+**webpage**
 ```
 <head>
 <script>
@@ -365,11 +366,18 @@ function aam_cb() {
 </script>
 <script type="text/JavaScript" src="https://adobeiosolutionsdemo.demdex.net/event?d_stuff=1&d_dst=1&d_rtbd=json&d_cts=1&d_cb=aam_cb"></script>
 </head>
-Put the below script at page-bottom (just before </body> tag) to load the custom advertisement banner if the visitor is part of "trigger-aam" audience segment.
-Ad placehoder in a webpage for reference:
-<div class="ad_banner"><a id="ad_dest" href="#"><img id="aam_ad" src="images/addbanner_728x90_V1.jpg" alt=""></a></div>
+```
 
-changeAd
+
+
+1. Put the following script at page-bottom (just before `</body>` tag) to load the custom ad banner if the visitor is part of the "trigger-aam" audience segment.
+
+   Ad placehoder in a webpage for reference:
+   
+```<div class="ad_banner"><a id="ad_dest" href="#"><img id="aam_ad" src="images/addbanner_728x90_V1.jpg" alt=""></a></div>```
+
+**changeAd**
+```
 <script>
       if(jacketsCampaign)
            {
@@ -382,64 +390,6 @@ changeAd
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Step 6: Third Party Websites
-For our demo, we will be deploying a sample website on different domain to retrieve the audience segment for the visitor and based on that we will be delivering a relevant advertisement for the visitor.
-
-Create an ad banner specific for a marketing campaign targeted to specific audience segment. For example in our case we are interested in showing the below advertisement to an audience segment who added coats/jackets into the cart but later abandoned the cart. Needless to say that this audience segment has high potential customers who can eventually make a purchase (Because we know that they abandoned the cart with coat/jackets vs people who just visited coats/jackets products) and hence retailers would be ready to pay more money for serving the ad to this audience segment.
-
-
-
-Add below script in the HTML <head> section of the webpage where you want to display the ad.
-
-
-
-
-
-
-
-Put the below script at page-bottom (just before </body> tag) to load the custom advertisement banner if the visitor is part of "trigger-aam" audience segment.
-Ad placehoder in a webpage for reference:
-<div class="ad_banner"><a id="ad_dest" href="#"><img id="aam_ad" src="images/addbanner_728x90_V1.jpg" alt=""></a></div>
-
-changeAd
-<script>
-      if(jacketsCampaign)
-           {
-               document.getElementById("aam_ad").src="images/ad.jpg";  
-               document.getElementById("ad_dest").href="http://localhost:4502/content/we-retail/us/en/products/men.html";
-           }
-    </script>
-</body>
 
 
 Step 7: Let's Test 
