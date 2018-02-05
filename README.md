@@ -53,6 +53,9 @@ To set up Adobe products for this solution:
 
 1. [Set Up Adobe Audience Manager](#Set-up-AM)
 
+1. [Third Party Website](#Third-party)
+
+
 
 To set up Launch:
 
@@ -331,59 +334,48 @@ To set up Audience Manager:
 1. Save the changes.
 
 
-### <a name="Set-up-Target">Set Up Adobe Target</a>
+### <a name="Third-party">Third-party Website</a>
 
-To set up Target:
+For our demo, we will be deploying a sample website on different domain to retrieve the audience segment for the visitor and based on that we will be delivering a relevant advertisement for the visitor.
 
-1. Click **Launch** on the Target product card.
-
-   ![target card launch](https://user-images.githubusercontent.com/29133525/34688275-d21fade6-f46e-11e7-8aa1-cd1d8fd080ce.png)
-    
-
-
-1. On the **Activities** tab, click **Create Activity** and select **Experience Targeting**.
-
-   ![create activity](https://user-images.githubusercontent.com/29133525/34688008-e76a2830-f46d-11e7-91c7-4a34c5bed95b.png)
-
-
-1. On the **Create Experience Targeting Activity** form, provide the target page URL.
-
-   ![targeting activity](https://user-images.githubusercontent.com/29133525/34688397-3a28006e-f46f-11e7-8299-e99b4b8cacbc.png)
-
-
-1. On the **Create Experience Targeting Activity** form, provide the Target page URL.
-
-     ![targeting activity](https://user-images.githubusercontent.com/29133525/34688888-d5ec0c88-f470-11e7-82a5-97650683a1c7.png)
-
-1. Open the text editor to add a custom UI element for the user on the site. To do this, select an empty container and click **Edit Text/HTML**.
-
-   ![container](https://user-images.githubusercontent.com/29133525/34688820-9d3c2210-f470-11e7-9983-8f1ee5c5adb7.png)
-
-1. On the text editor, click the **HTML** button, paste the following HTML and click **Save**.
-
-
-   ![best coat and jackets for you](https://user-images.githubusercontent.com/29133525/34688762-7089b494-f470-11e7-86d7-d10dab3a371f.png)
-
-1. Click **Next** and then click **Change Audience**.
-
-   ![change audience](https://user-images.githubusercontent.com/29133525/34689000-43b8698c-f471-11e7-87b1-f81a8e33c0e9.png)
+Create an ad banner specific for a marketing campaign targeted to specific audience segment. For example in our case we are interested in showing the below advertisement to an audience segment who added coats/jackets into the cart but later abandoned the cart. Needless to say that this audience segment has high potential customers who can eventually make a purchase (Because we know that they abandoned the cart with coat/jackets vs people who just visited coats/jackets products) and hence retailers would be ready to pay more money for serving the ad to this audience segment.
 
 
 
-1. On the **Choose Audience** screen, select the **Trigger-segment** audience by **aam-integration-user**. This is the same segment that we created in Adobe Audience Manager.
+Add below script in the HTML <head> section of the webpage where you want to display the ad.
 
-*Note: If this segment doesn't appear in your target then please make sure that "Shared Audiences" is [enabled for your organization] (https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES)*.
 
-   ![trigger segment audience](https://user-images.githubusercontent.com/29133525/34689121-a6a31146-f471-11e7-8c22-206f3543925f.png)
+<head>
+<script>
+var demdex_seg="", jacketsCampaign=false;
+function aam_cb() {
+    if (typeof (arguments[0].stuff) != "undefined" && arguments[0].stuff != "") {
+        demdex_seg = arguments[0].stuff;
+        for(var i=0;i<demdex_seg.length;i++)
+        {
+            if(demdex_seg[i].cn=="trigger-aam")
+            {
+                jacketsCampaign=true;
+            }
+        }
+    }
+}
+</script>
+<script type="text/JavaScript" src="https://adobeiosolutionsdemo.demdex.net/event?d_stuff=1&d_dst=1&d_rtbd=json&d_cts=1&d_cb=aam_cb"></script>
+</head>
+Put the below script at page-bottom (just before </body> tag) to load the custom advertisement banner if the visitor is part of "trigger-aam" audience segment.
+Ad placehoder in a webpage for reference:
+<div class="ad_banner"><a id="ad_dest" href="#"><img id="aam_ad" src="images/addbanner_728x90_V1.jpg" alt=""></a></div>
 
-1. On the **Activity Setting**, update your **Goal Metrics**.
-
-   ![activity settings](https://user-images.githubusercontent.com/29133525/34689441-c421cf40-f472-11e7-98bb-9cc8581345de.png)
-
-1. Click **Save & Close**.
- 
- 
- 
+changeAd
+<script>
+      if(jacketsCampaign)
+           {
+               document.getElementById("aam_ad").src="images/ad.jpg";  
+               document.getElementById("ad_dest").href="http://localhost:4502/content/we-retail/us/en/products/men.html";
+           }
+    </script>
+</body>
  
 
 
