@@ -392,7 +392,7 @@ function aam_cb() {
 
 To watch the solution work, you can test the cart abandonment and advertisement scenario:
 
-1. Go to https://aam-demo2.herokuapp.com, to see the page has "no ads to show."
+1. Visit the sample website https://aam-demo2.herokuapp.com to see the page has "No ads to show."
 
    ![no ads](https://user-images.githubusercontent.com/29133525/35831200-2c632fb2-0a86-11e8-9158-1b3d583ed962.png)
 
@@ -426,7 +426,7 @@ To watch the solution work, you can test the cart abandonment and advertisement 
    wsk activation get f6f5ae1dcb3d4292991d63f22283fb94
    ```
 
-1.  View the [web site](https://aam-demo2.herokuapp.com/index.html) again to see the custom ad banner displayed for the visitor!
+1.  View the [sample web site](https://aam-demo2.herokuapp.com/index.html) again to see the custom ad banner displayed for the visitor!
 
       ![custom ad banner done](https://user-images.githubusercontent.com/29133525/35831651-b82cbf8a-0a87-11e8-9929-7856fff3a09d.png)
 
