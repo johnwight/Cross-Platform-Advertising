@@ -140,6 +140,7 @@ To set up Triggers for this solution:
    * Custom eVar 6
    * Custom eVar 7
    * Custom eVar 8
+   * Page URL
 
 1. To enable these dimensions in your report suite:
 
