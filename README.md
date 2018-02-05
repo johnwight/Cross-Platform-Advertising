@@ -417,7 +417,7 @@ To watch the solution work, you can test the cart abandonment and advertisement 
    wsk activation list aam
    ```
 
-   ![runtime commands](https://user-images.githubusercontent.com/29133525/34690130-28f88e16-f475-11e7-88e3-35e4202b27e7.png)
+   ![activation aam](https://user-images.githubusercontent.com/29133525/35831408-d067f2be-0a86-11e8-8e9b-c24fb52fd79b.png)
 
 
 1. Select and copy the first activation listed and paste it into the following command:
