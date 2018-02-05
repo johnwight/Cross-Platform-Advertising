@@ -426,7 +426,7 @@ To watch the solution work, you can test the cart abandonment and advertisement 
    wsk activation get f6f5ae1dcb3d4292991d63f22283fb94
    ```
 
-1. View the [**Products** site page](http://localhost:4502/content/we-retail/us/en/products/men.html) to see the custom UI element you created.
+1.  View https://aam-demo2.herokuapp.com/index.html again to see the custom ad banner displayed for the visitor!
 
    ![best coat message in ui](https://user-images.githubusercontent.com/29133525/34689847-32b35e8c-f474-11e7-971b-a4d23009f103.png)
 
