@@ -69,7 +69,6 @@ To set up Launch:
 
 ```
 var cart=ContextHub.getItem("cart");
-var profile=ContextHub.getItem("profile");
  
 var price=[];
 var items=[];
