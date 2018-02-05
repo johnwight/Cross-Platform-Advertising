@@ -392,12 +392,12 @@ function aam_cb() {
 
 To watch the solution work, you can test the cart abandonment and advertisement scenario:
 
-1. Visit the sample website https://aam-demo2.herokuapp.com to see the page has "No ads to show."
+1. Visit the website https://aam-demo2.herokuapp.com to see the page has "No ads to show."
 
    ![no ads](https://user-images.githubusercontent.com/29133525/35831200-2c632fb2-0a86-11e8-9158-1b3d583ed962.png)
 
 
-1. At http://localhost:4502/content/we-retail/us/en/products/men.html, click on a coat or jacket you want to test.
+1. At the sample retail website, http://localhost:4502/content/we-retail/us/en/products/men.html, and click on a coat or jacket you want to test.
 
 1. Select a **Color** and **Size**, then click the **ADD TO CART** button and **Checkout**.
 
@@ -426,7 +426,7 @@ To watch the solution work, you can test the cart abandonment and advertisement 
    wsk activation get f6f5ae1dcb3d4292991d63f22283fb94
    ```
 
-1.  View the [sample web site](https://aam-demo2.herokuapp.com/index.html) again to see the custom ad banner displayed for the visitor!
+1.  View the [other web site](https://aam-demo2.herokuapp.com/index.html) again to see the custom ad banner displayed for the visitor!
 
       ![custom ad banner done](https://user-images.githubusercontent.com/29133525/35831651-b82cbf8a-0a87-11e8-9929-7856fff3a09d.png)
 
