@@ -336,10 +336,11 @@ To set up Audience Manager:
 
 ### <a name="Third-party">Third-party Website</a>
 
-For our demo, we will be deploying a sample website on different domain to retrieve the audience segment for the visitor and based on that we will be delivering a relevant advertisement for the visitor.
+In this solution, we deploy a sample website on different a domain to collect data for the user's audience segment and then deliver a relevant advertisement for the visitor.
 
-Create an ad banner specific for a marketing campaign targeted to specific audience segment. For example in our case we are interested in showing the below advertisement to an audience segment who added coats/jackets into the cart but later abandoned the cart. Needless to say that this audience segment has high potential customers who can eventually make a purchase (Because we know that they abandoned the cart with coat/jackets vs people who just visited coats/jackets products) and hence retailers would be ready to pay more money for serving the ad to this audience segment.
+To deploy the site:
 
+1. Create an ad banner targeted to a specific audience segment. In this example, we will show the following advertisement to an audience segment who added coats or jackets into the cart but later abandoned the cart. This audience segment includes high-potential customers who might eventually make a purchase (because we know that they abandoned the cart with coat or jackets as opposed to those who just visited the product page) so retailers would be ready to pay more money for serving the ad to this audience segment.
 
 
 Add below script in the HTML <head> section of the webpage where you want to display the ad.
