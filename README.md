@@ -50,7 +50,11 @@ To set up Launch:
 
    ![create property box details](https://user-images.githubusercontent.com/29133525/34681834-4af921e4-f45a-11e7-9f8f-3daca980310c.png)
 
-1. Click the **Extensions** tab and install the Analytics extension and specify the report suite in thefollowing extensions
+1. Click the **Extensions** tab and install the Analytics extension. Add the Report Suite for **Development**, **Staging**, and **Production**. The full Report Suite ID is available at **Analytics** > **Admin** > **Report Suites**.
+
+   ![analytics extension and report suite](https://user-images.githubusercontent.com/29133525/35827338-d4162dd0-0a78-11e8-9f9a-c54d30cc7644.png)
+
+1. Add the **Experience Cloud ID Service** and **Adobe ContextHub** extensions with default settings and Click **Save**. 
 
    * Target
    * Analytics
