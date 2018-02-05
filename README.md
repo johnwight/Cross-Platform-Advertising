@@ -56,13 +56,9 @@ To set up Launch:
 
 1. Add the **Experience Cloud ID Service** and **Adobe ContextHub** extensions with default settings and Click **Save**. 
 
-   * Target
-   * Analytics
-   * ContextHub
-   * Core
-   * Experience Cloud ID Service
-   
-   ![extensions](https://user-images.githubusercontent.com/29133525/34681903-83087260-f45a-11e7-9f10-a9b39123e28b.png)
+
+   ![final extensions](https://user-images.githubusercontent.com/29133525/35827675-2b92d012-0a7a-11e8-95db-ddc78760cfb6.png)
+
 
 1. Click the **Rules** tab and create a **Target** rule with the following specifications:
 
