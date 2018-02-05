@@ -60,12 +60,9 @@ To set up Launch:
    ![final extensions](https://user-images.githubusercontent.com/29133525/35827675-2b92d012-0a7a-11e8-95db-ddc78760cfb6.png)
 
 
-1. Click the **Rules** tab and create a **Target** rule with the following specifications:
+1. Click the **Rules** tab and create a **Analytics** rule with the following specifications:
 
-   ![edit rule](https://user-images.githubusercontent.com/29133525/34681953-a1b34b40-f45a-11e7-920a-352ac58f3696.png)
-
-1. Similarly, create an **Analytics** rule with the following specifications:
-
+  
    ![analytics rule](https://user-images.githubusercontent.com/29133525/34682376-038da364-f45c-11e7-959b-413760b2c451.png)
 
 1. For the **Adobe Analytics - Set Variables** action, click the **</> Open Editor** button at the bottom of the page and add the following custom script:
