@@ -25,7 +25,7 @@ This solution features the unique value of identifying cart abandonment activity
 
 The following diagram shows the architecture for this solution:
 
-![aam architecture](https://user-images.githubusercontent.com/29133525/34681317-c1c44bca-f458-11e7-9dcc-6b5a45e27a9f.png)
+![advertising use case architecture](https://user-images.githubusercontent.com/29133525/35827000-c186acf4-0a77-11e8-9f96-a7522795df5d.jpeg)
 
 ### What's Needed
 
