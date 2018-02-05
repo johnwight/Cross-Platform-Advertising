@@ -394,7 +394,10 @@ To watch the solution work, you can test the cart abandonment and advertisement 
 
 1. Go to https://aam-demo2.herokuapp.com, to see the page has "no ads to show."
 
-1. At http://localhost:4502/content/we-retail/us/en/products/men.html, click on a product you want to test.
+   ![no ads](https://user-images.githubusercontent.com/29133525/35831200-2c632fb2-0a86-11e8-9158-1b3d583ed962.png)
+
+
+1. At http://localhost:4502/content/we-retail/us/en/products/men.html, click on a coat or jacket you want to test.
 
 1. Select a **Color** and **Size**, then click the **ADD TO CART** button and **Checkout**.
 
