@@ -370,7 +370,7 @@ function aam_cb() {
 
 
 
-1. Put the following script at page-bottom (just before `</body>` tag) to load the custom ad banner if the visitor is part of the "trigger-aam" audience segment.
+3. Put the following script at page-bottom (just before `</body>` tag) to load the custom ad banner if the visitor is part of the "trigger-aam" audience segment.
 
    Ad placehoder in a webpage for reference:
    
@@ -387,6 +387,61 @@ function aam_cb() {
     </script>
 </body>
 ```
+
+## <a name="Watch-It-Work">Watch the Solution Work</a> 
+
+To watch the solution work, you can test the cart abandonment and advertisement scenario:
+
+1. Go to https://aam-demo2.herokuapp.com, to see the page has "no ads to show."
+
+1. At http://localhost:4502/content/we-retail/us/en/products/men.html, click on a product you want to test.
+
+1. Select a **Color** and **Size**, then click the **ADD TO CART** button and **Checkout**.
+
+1. Enter details on the **ORDER** form and then click **CONTINUE**.
+
+   ![checkout form](https://user-images.githubusercontent.com/29133525/34689987-aded8adc-f474-11e7-836c-cb64db0e2ae4.png)
+
+1. Close the browser tab to simulate the cart abandonment scenario.
+
+1. On the Triggers UI page, watch for your specified trigger event to appear.
+
+   ![triggers page](https://user-images.githubusercontent.com/29133525/34690062-e7356260-f474-11e7-9b0e-6eca0128a25f.png)
+
+1. On the Command Line Interface (CLI) enter the following commands:
+
+   ```
+   wsk activation list runtime
+   ```
+
+   ![runtime commands](https://user-images.githubusercontent.com/29133525/34690130-28f88e16-f475-11e7-88e3-35e4202b27e7.png)
+
+
+1. Select and copy the first activation listed and paste it into the following command:
+
+   ```
+   wsk activation get f6f5ae1dcb3d4292991d63f22283fb94
+   ```
+
+1. View the [**Products** site page](http://localhost:4502/content/we-retail/us/en/products/men.html) to see the custom UI element you created.
+
+   ![best coat message in ui](https://user-images.githubusercontent.com/29133525/34689847-32b35e8c-f474-11e7-971b-a4d23009f103.png)
+
+## Authors
+- Hiren Shah [@hirenshah111](https://github.com/hirenshah111).
+- John Wight [@johnwight](https://github.com/johnwight).
+
+
+## Feedback?
+
+Please help make this solution as useful as possible. If you find a problem in the documentation or have a suggestion, click the **Issues** tab on this GiHhub repository and then click the **New issue** button. Provide a title and description for your comment and then click the **Submit new issue** button.
+
+   ![submit new issue](https://user-images.githubusercontent.com/29133525/32515298-f344bd5a-c3bc-11e7-9978-34516f964f9f.png)
+   
+   
+
+
+
 
 
 
