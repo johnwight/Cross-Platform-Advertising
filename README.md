@@ -39,6 +39,20 @@ To complete this solution, you will need authorization to use the following serv
 * Adobe Audience Manager
 * Third-party website for demonstrating solution
 
+## <a name="Set-Up-Products">Set Up Products</a>
+
+To set up Adobe products for this solution:
+
+1. [Set Up Adobe Launch](#Set-up-Launch)
+
+1. [Set Up Analytics Triggers](#Set-up-Triggers)
+
+1. [Set Up Adobe I/O Runtime](#Set-up-Runtime)
+
+1. [Set Up Adobe I/O Events](#Set-up-Events)
+
+1. [Set Up Adobe Audience Manager](#Set-up-AM)
+
 
 To set up Launch:
 
