@@ -50,7 +50,7 @@ To set up Launch:
 
    ![create property box details](https://user-images.githubusercontent.com/29133525/34681834-4af921e4-f45a-11e7-9f8f-3daca980310c.png)
 
-1. Click the **Extensions** tab and install the following extensions
+1. Click the **Extensions** tab and install the Analytics extension and specify the report suite in thefollowing extensions
 
    * Target
    * Analytics
